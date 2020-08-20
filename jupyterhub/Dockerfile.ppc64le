@@ -1,7 +1,5 @@
 FROM jupyterhub/jupyterhub:master
 
-RUN useradd admin
-
 COPY jupyterhub_config.py .
 
 RUN pip install \
